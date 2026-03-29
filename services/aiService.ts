@@ -52,7 +52,7 @@ export const sendMessageToAssistant = async (message: string, history: {role: st
       headers: {
         "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
         "Content-Type": "application/json",
-        "HTTP-Referer": "http://localhost:5173", // Optional, for OpenRouter tracking
+        "HTTP-Referer": "https://gcu-cs-iciem.netlify.app", // For OpenRouter tracking
         "X-Title": "GCU Conference Site", // Optional
       },
       body: JSON.stringify({
