@@ -1,0 +1,8 @@
+
+{
+  "name": "GCU Innovations in Sustainable Technology Conference",
+  "description": "A professional conference web application for Garden City University featuring countdown timers, track information, important dates, and an AI-powered conference assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

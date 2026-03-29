@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Garden City University - ICIEM-2026</title>
+    <link rel="icon" type="image/png" href="https://www.gardencity.university/wp-content/uploads/2023/04/G-Logo.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.gardencity.university/wp-content/uploads/2023/04/G-Logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4A0E0E",
+              "primary-light": "#5D1212",
+              "accent": "#F58220",
+              "accent-hover": "#E07210",
+              "background-light": "#ffffff",
+              "background-dark": "#1a0505",
+            },
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        html {
+          @apply h-full;
+          -webkit-tap-highlight-color: transparent;
+        }
+        body {
+          @apply bg-white text-[#111318] font-display w-full overflow-x-hidden;
+          /* Prevents overscroll bounce on mobile which can disrupt the header */
+        }
+        /* Fix for sticky elements on iOS/iPadOS */
+        .sticky-header {
+          position: -webkit-sticky;
+          position: sticky;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4A0E0E;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #5D1212;
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <!-- Microsoft CMT Acknowledgement - required for validation; do not remove -->
+    <p style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;font-size:1px;">The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
+    <div id="root"></div>
+    <noscript>
+      <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
+      <p><a href="/acknowledgement.html">View Acknowledgement page</a></p>
+    </noscript>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
