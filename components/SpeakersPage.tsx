@@ -67,15 +67,19 @@ const SpeakersPage: React.FC = () => {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {SPEAKERS.invited.map((speaker, idx) => (
+                        {SPEAKERS.invited.map((speaker: any, idx) => (
                             <div
                                 key={idx}
                                 className="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center group hover:bg-white hover:shadow-xl transition-all duration-300 animate-fade-in-up"
                                 style={{ animationDelay: `${idx * 0.1}s` }}
                             >
-                                <div className="size-20 rounded-2xl bg-primary/5 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
-                                    <span className="text-2xl font-black">{speaker.name.charAt(0)}</span>
-                                </div>
+                                {speaker.image ? (
+                                    <img src={speaker.image} alt={speaker.name} className="size-20 rounded-2xl object-cover mb-6 shadow-md" />
+                                ) : (
+                                    <div className="size-20 rounded-2xl bg-primary/5 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                                        <span className="text-2xl font-black">{speaker.name.charAt(0)}</span>
+                                    </div>
+                                )}
                                 <h3 className="text-xl font-black text-primary mb-2 group-hover:text-accent transition-colors">{speaker.name}</h3>
                                 <div className="text-xs font-black text-slate-400 uppercase tracking-widest mb-4">{speaker.designation}</div>
                                 <div className="text-sm font-bold text-slate-500">{speaker.institution}</div>

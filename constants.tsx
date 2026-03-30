@@ -276,26 +276,26 @@ export const SPEAKERS = {
       designation: 'Adjunct Professor & NASI Senior Scientist',
       institution: 'NIAS, IISc Campus',
       bio: 'Former Professor, Indian Institute of Science.',
-      image: 'https://ui-avatars.com/api/?name=Lalit+Patnaik&background=4A0E0E&color=fff&size=256'
+      image: '/images/lalit.jpg'
     },
     {
       name: 'Prof. Anne McArdle',
       designation: 'Professor',
       institution: 'University of Liverpool, UK',
       bio: 'Renowned academic expert and researcher.',
-      image: 'https://ui-avatars.com/api/?name=Anne+McArdle&background=4A0E0E&color=fff&size=256'
+      image: '/images/anne.jpg'
     }
   ],
   invited: [
     { name: 'Dr. Thrivikrama Rao Dasari', designation: 'Senior Manager', institution: 'Flight Test Centre, Hindustan Aeronautics Limited, Bengaluru' },
     { name: 'Dr. Divakar D. S.', designation: 'Scientist D & Senior Consultant', institution: 'INMC, Peenya Industrial Estate' },
-    { name: 'Dr. Kanagasundaram K', designation: 'Principal Technical Specialist', institution: 'Nokia, Bengaluru' },
+    { name: 'Dr. Kanagasundaram K', designation: 'Principal Technical Specialist', institution: 'Nokia, Bengaluru', image: '/images/kanagasundaram.jpg' },
     { name: 'Mr. Mukul Tikotkar', designation: 'Senior Director', institution: 'Qualcomm, Bengaluru' },
-    { name: 'Dr. Vignesh Ramamoorthy', designation: 'Associate Professor', institution: 'Amity University' },
+    { name: 'Dr. Vignesh Ramamoorthy', designation: 'Associate Professor', institution: 'Amity University', image: '/images/vignesh.jpg' },
     { name: 'Dr. Sunil Kumar G', designation: 'Head of AI, Data Science & Analytics', institution: 'Lenovo' },
-    { name: 'Mr. Prakash Thomas', designation: 'AWS DevOps Architect & Platform Engineer', institution: 'NTT DATA' },
+    { name: 'Mr. Prakash Thomas', designation: 'AWS DevOps Architect & Platform Engineer', institution: 'NTT DATA', image: '/images/prakash.jpg' },
     { name: 'Mr. Dheeraj Ram', designation: 'Senior Software Engineer', institution: 'Microsoft' },
-    { name: 'Dr. Sreejith S', designation: 'Associate Professor, Dept. of AI & ML', institution: 'New Horizon College of Engineering, Bengaluru' }
+    { name: 'Dr. Sreejith S', designation: 'Associate Professor, Dept. of AI & ML', institution: 'New Horizon College of Engineering, Bengaluru', image: '/images/sreejith.jpg' }
   ]
 };
 
