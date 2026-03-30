@@ -138,8 +138,10 @@ const App: React.FC = () => {
                 <span className="hidden sm:inline w-1.5 h-1.5 rounded-full bg-accent/60"></span>
                 <span className="hidden sm:inline text-sm font-medium text-gray-100">Bengaluru, India</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-black leading-[1.1] md:leading-[1.05] tracking-tight mb-8 max-w-4xl">
-                Innovation, Engineering & <br /><span className="text-accent">Management</span>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-[1.2] md:leading-[1.15] tracking-tight mb-8 max-w-4xl uppercase">
+                International Conference on<br />
+                Innovation, Engineering &amp; Management<br />
+                <span className="text-accent">(ICIEM-2026)</span>
               </h1>
               
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8 mb-10 max-w-3xl text-gray-200 shadow-xl">
@@ -282,11 +284,14 @@ const App: React.FC = () => {
                   style={{ backgroundImage: `url('${IMAGES.speaker}')` }}
                 />
                 <div className="absolute bottom-0 left-0 p-8 md:p-14 z-20 text-white w-full text-left">
-                  <span className="material-symbols-outlined text-[40px] md:text-[56px] text-accent mb-4 md:mb-6 opacity-80">format_quote</span>
-                  <blockquote className="text-2xl md:text-4xl font-black leading-tight mb-6 italic max-w-3xl">
-                    "Sustainability is no longer about doing less harm. It's about doing more good."
+                  <span className="material-symbols-outlined text-[40px] md:text-[56px] text-accent mb-4 md:mb-6 opacity-80">mic</span>
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-accent mb-4">Distinguished Speakers</p>
+                  <blockquote className="text-2xl md:text-4xl font-black leading-tight mb-6 max-w-3xl">
+                    Connecting Visionaries, Innovators &amp; Industry Leaders at ICIEM-2026
                   </blockquote>
-                  <p className="text-base md:text-xl text-gray-300 mb-8 font-medium tracking-wide">— Dr. Sarah Chen, Keynote Speaker</p>
+                  <p className="text-base md:text-xl text-gray-300 mb-8 font-medium leading-relaxed max-w-2xl">
+                    Gain insights from keynote speakers, invited experts from top institutions, and industry pioneers shaping the future of technology and engineering.
+                  </p>
                   <button
                     onClick={() => handleNavigate('speakers')}
                     className="bg-white text-primary px-8 py-4 rounded font-bold text-sm hover:bg-accent hover:text-white transition-all duration-300 inline-flex items-center gap-3 uppercase tracking-widest shadow-xl active:scale-95"
